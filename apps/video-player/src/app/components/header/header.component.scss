@@ -1,0 +1,41 @@
+
+header {
+	grid-area: header;
+	height: 55px;
+	border-bottom: 2px solid rgb(236, 236, 236);
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	padding: 0 10px 0 10px;
+	margin-bottom: 10px;
+	position: fixed;
+	top: -0.2em;
+	width: 100%;
+	z-index: 1;
+	background: white;
+}
+
+.header__logo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.header__pt-logo {
+	position: relative;
+	top: 7px;
+    width: 64px;
+}
+
+/* .header__profile should be right aligned */
+.header__profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-self: end;
+    margin: 0 32px;
+}
+
+.header__profile-name {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}

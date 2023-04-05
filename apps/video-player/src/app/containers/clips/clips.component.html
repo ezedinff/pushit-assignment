@@ -1,0 +1,14 @@
+<div class="main-wrapper">
+  <main *ngIf="clips || selectedClip; else loading">
+    <pushit-video-player [clip]="selectedClip"></pushit-video-player>
+    <pushit-list [clips]="clips"
+     (onClipSelected)="selectClip($event)"
+     (onScrollDown)="loadMore()"></pushit-list>
+  </main>
+</div>
+
+<ng-template #loading>
+  <div class="loading">
+    <div class="loading__spinner"></div>
+  </div>
+</ng-template>

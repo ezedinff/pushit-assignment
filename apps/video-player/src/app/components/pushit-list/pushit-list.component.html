@@ -1,0 +1,20 @@
+<aside class="aside"   pushit-infinite-scroll
+[infiniteScrollDistance]="1"
+[infiniteScrollThrottle]="50"
+[scrollWindow]="false"
+(scrolled)="scrollDown()">
+  <ul class="clip-list"
+  >
+    <li *ngFor="let clip of clips" class="rounded shadow" (click)="selectClip(clip)">
+      <div class="clip-thumbnail">
+        <img [src]="clip.clipThumb" alt="{{ clip.clipTitle }}" />
+      </div>
+      <div class="clip-details">
+        <div class="clip-title">{{ clip.clipTitle }}</div>
+        <div class="clip-metadata">
+          <span class="clip-date">{{ clip.clipDate | date }}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</aside>

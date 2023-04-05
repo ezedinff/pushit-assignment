@@ -1,0 +1,23 @@
+<div class="main__video">
+  <div class="main__clip-info">
+    <p>
+      <a [routerLink]="['/clips', clip?.clipId]">{{ clip?.clipId }}</a> /
+      {{ clip?.clipDate | date }}
+    </p>
+  </div>
+  <div class="main__video-container">
+    <video
+      #videoPlayer
+      controls
+      muted
+      autoplay
+      [src]="clip?.clipURL"
+      (canplay)="playVideo()"
+    ></video>
+  </div>
+  <div class="main__description">
+    <p>
+      {{ clip?.clipTitle }}
+    </p>
+  </div>
+</div>
