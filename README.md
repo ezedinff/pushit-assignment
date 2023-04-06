@@ -1,5 +1,11 @@
 # PushitAssignment
 
+## Description
+video player with a backend api
+
+![screenshot](/screenshots/app.png)
+
+
 ## How to run the project
 
 ### Install dependencies
