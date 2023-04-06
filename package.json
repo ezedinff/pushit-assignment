@@ -2,10 +2,10 @@
   "name": "pushit-assignment",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": { 
-     "build:app:prod": "nx build video-player --configuration=production --prod",
-     "build:api:prod": "nx build api"
-   },
+  "scripts": {
+    "build:app:prod": "nx build video-player --configuration=production --prod",
+    "build:api:prod": "nx build api"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~15.2.0",
@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@angular/animations": "~15.2.0",
+    "@angular/cdk": "^15.2.6",
     "@angular/common": "~15.2.0",
     "@angular/compiler": "~15.2.0",
     "@angular/core": "~15.2.0",
