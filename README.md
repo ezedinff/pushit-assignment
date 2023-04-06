@@ -11,3 +11,7 @@ npm install
 nx run-many --target=serve --projects=video-player,api --parallel
 ```
 
+## Run the project in docker
+```bash
+docker-compose up --build
+```
