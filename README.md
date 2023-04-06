@@ -3,7 +3,7 @@
 ## Description
 video player with a backend api
 
-![screenshot](/screenshots/app.png)
+<img src="/screenshots/app.png" alt="screenshot" width="200"/>
 
 
 ## How to run the project
